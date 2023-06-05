@@ -1,0 +1,64 @@
+@import '../../../scss/index.scss';
+
+.login-form{
+
+    text-align: center;
+    .avatar{
+        display: table;
+        margin: 0 auto;
+        border: 5 px solid #9a9a9a;
+        border-radius: 50px;
+        padding: 1px;
+        margin-bottom: 20px;
+    }
+
+    .ant-form-item: last-of-type{
+        margin: 0;
+        
+    }
+
+    &__input {
+        .ant-input.prefix {
+            i {
+                font-size: 0em + 22px / $defaultFontSize;
+                
+            }
+        }
+        input { 
+            font-size: 0em + 20px / $defaultFontSize;
+            padding: 20x 20px 20px 70px !important ;
+            &:focus {
+                border-color: $primary-color;
+                box-shadow: none;
+            }
+        }
+    }
+    .ant-form-item {
+        margin-top: 10px;
+        margin-bottom: 8px;
+
+        i{
+            color: rgba (0,0,0,.25);
+        }
+    }
+
+    &__button {
+        width: 100%;
+        font-size: 0em + 22 px / $defaultFontSize;
+        background-color: $primary-color;
+        color: $font-light;
+        height: 0 px;
+        margin-top: 10px;
+        &:hover {
+            background-color: $primary-color-hover;
+            color: $font-light;
+        }
+        &:focus,
+        &:active {
+            background-color: $primary-color;
+            color:  $font-light;
+            border: 0;
+        }
+
+    }
+}
